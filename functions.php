@@ -229,6 +229,8 @@ return $html;
 }
 add_filter('widget_text','php_execute',100);
 
+
+//* RECENT POSTS SHORTCODE
 function my_recent_posts_shortcode($atts){
  $q = new WP_Query(
    array( 'orderby' => 'date', 'posts_per_page' => '4')
@@ -249,3 +251,6 @@ return $list . '</ul>';
 }
 
 add_shortcode('recent-posts', 'my_recent_posts_shortcode');
+
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');

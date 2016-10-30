@@ -145,7 +145,7 @@ body {
 	background-position: top left;
 	background-repeat: repeat;
 	color: #000;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.625;
@@ -238,7 +238,7 @@ h4,
 h5,
 h6 {
 	color: #000;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -405,7 +405,7 @@ input[type="submit"],
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -449,7 +449,7 @@ Structure and Layout
 	background-color: #fff;
 	/*box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);*/
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 960px;
 }
 
 .daily-dish-landing .site-container {
@@ -458,7 +458,7 @@ Structure and Layout
 
 .site-inner {
 	clear: both;
-	margin: 40px 0;
+	/*margin: 40px 0;*/
 }
 
 /* Column Widths and Positions
@@ -485,7 +485,7 @@ Structure and Layout
 
 .content {
 	float: right;
-	width: 720px;
+	width: 960px;
 }
 
 .content-sidebar .content,
@@ -716,7 +716,7 @@ Common Classes
 .widget-title {
 	background-color: #000;
 	color: #fff;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -1122,7 +1122,7 @@ Site Header
 }
 
 .site-title {
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 48px;
 	font-weight: 900;
 	letter-spacing: 3px;
@@ -1204,7 +1204,7 @@ Site Navigation
 .genesis-nav-menu a {
 	color: #000;
 	display: block;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -1413,7 +1413,7 @@ Content Area
 --------------------------------------------- */
 
 p.entry-meta {
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 12px;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -1719,7 +1719,7 @@ Site Footer
 
 .site-footer {
 	border-top: double #ddd;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -1782,6 +1782,14 @@ After Footer
 
 
 /* ADDED --------------------------------------*/
+@font-face {
+    font-family: 'mixtitanicamedium';
+    src: url('fonts/mixtitanica-webfont.woff2') format('woff2'),
+         url('fonts/mixtitanica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .home .site-container .entry-header {
 	display: none;
@@ -1829,7 +1837,73 @@ After Footer
     font-weight: 600;
 }
 
+.recent-post-slider .recentpost-categories ul.post-categories li:nth-child(1) a {
+	background: transparent !important;
+}
 
+.recent-post-slider .recentpost-categories{
+	width: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.recent-post-slider .recentpost-categories ul.post-categories {
+	display: inline-block;
+}
+
+.recent-post-slider .recentpost-categories span {
+	margin-right: 10px;
+}
+
+.recent-post-slider.design-1 .post-content-left {
+	right: 0;
+	margin: auto;
+	color: #343434 !important;
+	background: #f7f7f7 !important;
+	max-width: 450px;
+	max-height: 210px;
+}
+
+.recent-post-slider.design-1 .post-content-left a, .recent-post-slider h2.wp-post-title {
+	color: #343434 !important;
+	text-align: center;
+}
+
+.recent-post-slider h2.wp-post-title{
+}
+
+.recent-post-slider h2.wp-post-title a{
+	font-family: 'mixtitanicamedium';
+	font-weight: normal;
+    font-size: 32px !important;
+    letter-spacing: 3px;
+    line-height: 34px !important;
+}
+
+.recent-post-slider .wp-post-date::after{
+	display: none;
+}
+
+.recent-post-slider .wp-post-content{
+	text-align: center;
+}
+
+.recent-post-slider .wp-post-content a.readmorebtn{
+	border: 1px solid #343434 !important;
+	padding: 10px 35px !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.recent-post-slider.design-1 .post-image-bg{
+	height: 576px !important;
+	background: transparent !important;
+}
+
+.recent-post-slider.design-1 .slick-dots {
+	display: none !important;
+}
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
