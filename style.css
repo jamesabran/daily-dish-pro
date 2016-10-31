@@ -695,7 +695,7 @@ Common Classes
 }
 
 .entry-title {
-	font-family: Alice, serif;
+	font-family: 'mixtitanicamedium';
 	font-size: 36px;
 	font-weight: 400;
 	text-transform: none;
@@ -875,6 +875,8 @@ Widgets
 
 .daily-dish-home .entry-content p:last-child {
 	margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .home-bottom,
@@ -890,7 +892,7 @@ Widgets
 
 .home-middle .featuredpost .entry {
 	float: left;
-	width: 340px;
+	width: 47.5%;
 }
 
 .featured-content .entry ~ .widget-title {
@@ -914,7 +916,7 @@ Widgets
 
 .home-middle .featured-content .entry:nth-of-type(2n+1) {
 	clear: left;
-	margin-right: 40px;
+	margin-right: 5%;
 }
 
 .home-bottom .featured-content .entry,
@@ -1792,7 +1794,7 @@ After Footer
 }
 
 .home .site-container .entry-header {
-	display: none;
+	/*display: none;*/
 }
 
 .home .entry-content h2{
@@ -1901,8 +1903,13 @@ After Footer
 	background: transparent !important;
 }
 
-.recent-post-slider.design-1 .slick-dots {
-	display: none !important;
+.widget-title {
+	background: #fff;
+	text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    color: #000;	
 }
 /*
 Media Queries
